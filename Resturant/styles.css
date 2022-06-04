@@ -109,56 +109,6 @@ header .navigation a:hover{
 .info-btn a:hover{
     color: #fff;
 }
-@media (max-width:770px){
-    *{
-        text-align: center;
-    }
-    header{
-        padding: 0px;
-        margin: 0px;
-    }
-    header .logo{
-        position: absolute;
-        font-size: 30px;
-        top: 0;
-        text-align: center;
-   
-    }
-    header .navigation{
-        font-weight: 200px;
-        font-size: 20px;
-        padding: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: auto;
-    }
-    .content{
-        max-width: 300px;
-        margin: 40px 40px;
-    }
-    .content .info h2{
-        color: #fff;
-        font-size: 40px;
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 1px;
-        line-height: 60px;
-        margin-bottom: 20px;
-    }
-    .content .info h2 span{
-        color: white;
-        font-size: 40px;
-        font-weight: 800;
-        text-transform: uppercase;
-    }
-    .content .info p{
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 40px;
-        color: #292620;
-    }
-}
 /*--About---*/
 #feature{
     width: 100%;
@@ -222,21 +172,6 @@ header .navigation a:hover{
     padding: 0 20px;
     text-align: initial;
 }
-@media (max-width:770px){
-    .title-text h1{
-        font-size: 35px;
-    }
-    .features{
-        flex-basis: 100%;
-    } 
-    .features-img{
-        flex-basis: 100%;
-    }
-    .features-img img{
-        width: 100%; 
-        
-    }
-}
 /*--Menu---*/
 #menu{
     width: 100%;
@@ -299,21 +234,6 @@ hr{
     bottom: 30%;
     opacity: 1;
 }
-@media (max-width:770px){
-    .menu-single{
-        flex-basis: 100%;
-        margin-bottom: 30px;
-    }
-    .menu-desc p{
-        font-size: 12px ;
-    }
-    hr{
-        margin: 5px auto;
-    }
-    .menu-single:hover .menu-desc {
-        bottom: 25% !important;
-    }
-}
 /*---Reviews-*/
 #reviews{
     width: 100%;
@@ -336,6 +256,7 @@ hr{
     box-shadow: 0 10px 20px 3px #E5B80B ;
     cursor: pointer;
     transition: transform .5s;
+    height: 350px;
 }
 .user{
     display: flex;
@@ -428,9 +349,79 @@ hr{
     margin-top: 20px;
 }
 @media (max-width:770px){
-    .footer-left .fa, .footer-right{
+    *{
+        text-align: center;
+    }
+    header{
+        padding: 0px;
+        margin: 0px;
+    }
+    header .logo{
+        position: absolute;
+        font-size: 30px;
+        top: 8px;
+        text-align: center;
+        left: 20px;
+   
+    }
+    header .navigation{
+        display: none;
+    }
+    .content{
+        max-width: 300px;
+        margin: 40px 40px;
+    }
+    .content .info h2{
+        color: #fff;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+    .content .info h2 span{
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .content .info p{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        color: #292620;
+    }
+    .title-text h1{
+        font-size: 35px;
+    }
+    .features{
+        flex-basis: 100%;
+    } 
+    .features-img{
+        flex-basis: 100%;
+    }
+    .features-img img{
+        width: 100%; 
+        
+    }
+    .menu-single{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .menu-desc p{
+        font-size: 12px ;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .menu-single:hover .menu-desc {
+        bottom: 25% !important;
+    }
+    .footer-left, .footer-right{
         flex-basis: 100%;
         font-size: 14px;
+        width: 100%;
     }
     .footer-img{
         top:25%;
@@ -439,4 +430,5 @@ hr{
         font-size:14px;
         margin: 3 px;
     }
+
 }
